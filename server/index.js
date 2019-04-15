@@ -12,14 +12,14 @@ function getTypesFormNode($) {
 	const childrenNodes = $('.post article div span').children().filter((n, ele) => ele.name);
 	const nodeLength = childrenNodes.length;
 	let tokens = [];
-	let current = 0;	
+	let current = 0;
 
-	while(current < nodeLength) {
+	while (current < nodeLength) {
 		let tagName = childrenNodes[current].name;
 		if (tagName === 'h3') {
 			const parts = [];
 			parts.push(childrenNodes[current++]);
-			while(current < nodeLength && tagName !== 'hr') {
+			while (current < nodeLength && tagName !== 'hr') {
 				parts.push(childrenNodes[current]);
 				tagName = childrenNodes[++current].name;
 			}
@@ -27,7 +27,7 @@ function getTypesFormNode($) {
 		} else {
 			current++;
 		}
-	}	
+	}
 
 	return constructorTypesJson(tokens, $);
 }
@@ -60,11 +60,11 @@ function constructorTypesJson(parts, $) {
 	let json = {};
 	for (let part of parts) {
 		const typeName = fistLetterUpper($(part[0]).text());
-		const code  = $(part[1]).find('code').text();
+		const code = $(part[1]).find('code').text();
 		const params = getParams(code);
 		const last = part[part.length - 1];
 		const paramsDefault = getParamsDefault(last, $);
-		
+
 		json[typeName] = params.map(param => {
 			return (typeof paramsDefault[param] !== 'undefined') ? { key: param, default: paramsDefault[param] } : { key: param };
 		});
