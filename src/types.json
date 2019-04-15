@@ -1,0 +1,1635 @@
+{
+  "AnyTypeAnnotation": [],
+  "ArrayExpression": [
+    {
+      "key": "elements"
+    }
+  ],
+  "ArgumentPlaceholder": [],
+  "ArrayPattern": [
+    {
+      "key": "elements"
+    }
+  ],
+  "ArrayTypeAnnotation": [
+    {
+      "key": "elementType"
+    }
+  ],
+  "ArrowFunctionExpression": [
+    {
+      "key": "params"
+    },
+    {
+      "key": "body"
+    },
+    {
+      "key": "async",
+      "default": false
+    }
+  ],
+  "AssignmentExpression": [
+    {
+      "key": "operator"
+    },
+    {
+      "key": "left"
+    },
+    {
+      "key": "right"
+    }
+  ],
+  "AssignmentPattern": [
+    {
+      "key": "left"
+    },
+    {
+      "key": "right"
+    }
+  ],
+  "AwaitExpression": [
+    {
+      "key": "argument"
+    }
+  ],
+  "BigIntLiteral": [
+    {
+      "key": "value"
+    }
+  ],
+  "BinaryExpression": [
+    {
+      "key": "operator"
+    },
+    {
+      "key": "left"
+    },
+    {
+      "key": "right"
+    }
+  ],
+  "BindExpression": [
+    {
+      "key": "object"
+    },
+    {
+      "key": "callee"
+    }
+  ],
+  "BlockStatement": [
+    {
+      "key": "body"
+    },
+    {
+      "key": "directives"
+    }
+  ],
+  "BooleanLiteral": [
+    {
+      "key": "value"
+    }
+  ],
+  "BooleanLiteralTypeAnnotation": [
+    {
+      "key": "value"
+    }
+  ],
+  "BooleanTypeAnnotation": [],
+  "BreakStatement": [
+    {
+      "key": "label",
+      "default": null
+    }
+  ],
+  "CallExpression": [
+    {
+      "key": "callee"
+    },
+    {
+      "key": "arguments"
+    }
+  ],
+  "CatchClause": [
+    {
+      "key": "param",
+      "default": null
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "ClassBody": [
+    {
+      "key": "body"
+    }
+  ],
+  "ClassDeclaration": [
+    {
+      "key": "id",
+      "default": null
+    },
+    {
+      "key": "superClass",
+      "default": null
+    },
+    {
+      "key": "body"
+    },
+    {
+      "key": "decorators",
+      "default": null
+    }
+  ],
+  "ClassExpression": [
+    {
+      "key": "id",
+      "default": null
+    },
+    {
+      "key": "superClass",
+      "default": null
+    },
+    {
+      "key": "body"
+    },
+    {
+      "key": "decorators",
+      "default": null
+    }
+  ],
+  "ClassImplements": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    }
+  ],
+  "ClassMethod": [
+    {
+      "key": "kind"
+    },
+    {
+      "key": "key"
+    },
+    {
+      "key": "params"
+    },
+    {
+      "key": "body"
+    },
+    {
+      "key": "computed",
+      "default": false
+    },
+    {
+      "key": "static",
+      "default": null
+    }
+  ],
+  "ClassPrivateProperty": [
+    {
+      "key": "key"
+    },
+    {
+      "key": "value",
+      "default": null
+    }
+  ],
+  "ClassProperty": [
+    {
+      "key": "key"
+    },
+    {
+      "key": "value",
+      "default": null
+    },
+    {
+      "key": "typeAnnotation",
+      "default": null
+    },
+    {
+      "key": "decorators",
+      "default": null
+    },
+    {
+      "key": "computed",
+      "default": false
+    }
+  ],
+  "ConditionalExpression": [
+    {
+      "key": "test"
+    },
+    {
+      "key": "consequent"
+    },
+    {
+      "key": "alternate"
+    }
+  ],
+  "ContinueStatement": [
+    {
+      "key": "label",
+      "default": null
+    }
+  ],
+  "DebuggerStatement": [],
+  "DeclareClass": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "extends",
+      "default": null
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "DeclareExportAllDeclaration": [
+    {
+      "key": "source"
+    }
+  ],
+  "DeclareExportDeclaration": [
+    {
+      "key": "declaration",
+      "default": null
+    },
+    {
+      "key": "specifiers",
+      "default": null
+    },
+    {
+      "key": "source",
+      "default": null
+    }
+  ],
+  "DeclareFunction": [
+    {
+      "key": "id"
+    }
+  ],
+  "DeclareInterface": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "extends",
+      "default": null
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "DeclareModule": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "body"
+    },
+    {
+      "key": "kind",
+      "default": null
+    }
+  ],
+  "DeclareModuleExports": [
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "DeclareOpaqueType": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "supertype",
+      "default": null
+    }
+  ],
+  "DeclareTypeAlias": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "right"
+    }
+  ],
+  "DeclareVariable": [
+    {
+      "key": "id"
+    }
+  ],
+  "DeclaredPredicate": [
+    {
+      "key": "value"
+    }
+  ],
+  "Decorator": [
+    {
+      "key": "expression"
+    }
+  ],
+  "Directive": [
+    {
+      "key": "value"
+    }
+  ],
+  "DirectiveLiteral": [
+    {
+      "key": "value"
+    }
+  ],
+  "DoExpression": [
+    {
+      "key": "body"
+    }
+  ],
+  "DoWhileStatement": [
+    {
+      "key": "test"
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "EmptyStatement": [],
+  "EmptyTypeAnnotation": [],
+  "ExistsTypeAnnotation": [],
+  "ExportAllDeclaration": [
+    {
+      "key": "source"
+    }
+  ],
+  "ExportDefaultDeclaration": [
+    {
+      "key": "declaration"
+    }
+  ],
+  "ExportDefaultSpecifier": [
+    {
+      "key": "exported"
+    }
+  ],
+  "ExportNamedDeclaration": [
+    {
+      "key": "declaration",
+      "default": null
+    },
+    {
+      "key": "specifiers"
+    },
+    {
+      "key": "source",
+      "default": null
+    }
+  ],
+  "ExportNamespaceSpecifier": [
+    {
+      "key": "exported"
+    }
+  ],
+  "ExportSpecifier": [
+    {
+      "key": "local"
+    },
+    {
+      "key": "exported"
+    }
+  ],
+  "ExpressionStatement": [
+    {
+      "key": "expression"
+    }
+  ],
+  "File": [
+    {
+      "key": "program"
+    },
+    {
+      "key": "comments"
+    },
+    {
+      "key": "tokens"
+    }
+  ],
+  "ForInStatement": [
+    {
+      "key": "left"
+    },
+    {
+      "key": "right"
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "ForOfStatement": [
+    {
+      "key": "left"
+    },
+    {
+      "key": "right"
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "ForStatement": [
+    {
+      "key": "init",
+      "default": null
+    },
+    {
+      "key": "test",
+      "default": null
+    },
+    {
+      "key": "update",
+      "default": null
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "FunctionDeclaration": [
+    {
+      "key": "id",
+      "default": null
+    },
+    {
+      "key": "params"
+    },
+    {
+      "key": "body"
+    },
+    {
+      "key": "generator",
+      "default": false
+    },
+    {
+      "key": "async",
+      "default": false
+    }
+  ],
+  "FunctionExpression": [
+    {
+      "key": "id",
+      "default": null
+    },
+    {
+      "key": "params"
+    },
+    {
+      "key": "body"
+    },
+    {
+      "key": "generator",
+      "default": false
+    },
+    {
+      "key": "async",
+      "default": false
+    }
+  ],
+  "FunctionTypeAnnotation": [
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "params"
+    },
+    {
+      "key": "rest",
+      "default": null
+    },
+    {
+      "key": "returnType"
+    }
+  ],
+  "FunctionTypeParam": [
+    {
+      "key": "name",
+      "default": null
+    },
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "GenericTypeAnnotation": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    }
+  ],
+  "Identifier": [
+    {
+      "key": "name"
+    }
+  ],
+  "IfStatement": [
+    {
+      "key": "test"
+    },
+    {
+      "key": "consequent"
+    },
+    {
+      "key": "alternate",
+      "default": null
+    }
+  ],
+  "Import": [],
+  "ImportDeclaration": [
+    {
+      "key": "specifiers"
+    },
+    {
+      "key": "source"
+    }
+  ],
+  "ImportDefaultSpecifier": [
+    {
+      "key": "local"
+    }
+  ],
+  "ImportNamespaceSpecifier": [
+    {
+      "key": "local"
+    }
+  ],
+  "ImportSpecifier": [
+    {
+      "key": "local"
+    },
+    {
+      "key": "imported"
+    }
+  ],
+  "InferredPredicate": [],
+  "InterfaceDeclaration": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "extends",
+      "default": null
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "InterfaceExtends": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    }
+  ],
+  "InterfaceTypeAnnotation": [
+    {
+      "key": "extends",
+      "default": null
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "InterpreterDirective": [
+    {
+      "key": "value"
+    }
+  ],
+  "IntersectionTypeAnnotation": [
+    {
+      "key": "types"
+    }
+  ],
+  "JSXAttribute": [
+    {
+      "key": "name"
+    },
+    {
+      "key": "value",
+      "default": null
+    }
+  ],
+  "JSXClosingElement": [
+    {
+      "key": "name"
+    }
+  ],
+  "JSXClosingFragment": [],
+  "JSXElement": [
+    {
+      "key": "openingElement"
+    },
+    {
+      "key": "closingElement",
+      "default": null
+    },
+    {
+      "key": "children"
+    },
+    {
+      "key": "selfClosing"
+    }
+  ],
+  "JSXEmptyExpression": [],
+  "JSXExpressionContainer": [
+    {
+      "key": "expression"
+    }
+  ],
+  "JSXFragment": [
+    {
+      "key": "openingFragment"
+    },
+    {
+      "key": "closingFragment"
+    },
+    {
+      "key": "children"
+    }
+  ],
+  "JSXIdentifier": [
+    {
+      "key": "name"
+    }
+  ],
+  "JSXMemberExpression": [
+    {
+      "key": "object"
+    },
+    {
+      "key": "property"
+    }
+  ],
+  "JSXNamespacedName": [
+    {
+      "key": "namespace"
+    },
+    {
+      "key": "name"
+    }
+  ],
+  "JSXOpeningElement": [
+    {
+      "key": "name"
+    },
+    {
+      "key": "attributes"
+    },
+    {
+      "key": "selfClosing",
+      "default": false
+    }
+  ],
+  "JSXOpeningFragment": [],
+  "JSXSpreadAttribute": [
+    {
+      "key": "argument"
+    }
+  ],
+  "JSXSpreadChild": [
+    {
+      "key": "expression"
+    }
+  ],
+  "JSXText": [
+    {
+      "key": "value"
+    }
+  ],
+  "LabeledStatement": [
+    {
+      "key": "label"
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "LogicalExpression": [
+    {
+      "key": "operator"
+    },
+    {
+      "key": "left"
+    },
+    {
+      "key": "right"
+    }
+  ],
+  "MemberExpression": [
+    {
+      "key": "object"
+    },
+    {
+      "key": "property"
+    },
+    {
+      "key": "computed",
+      "default": false
+    },
+    {
+      "key": "optional",
+      "default": null
+    }
+  ],
+  "MetaProperty": [
+    {
+      "key": "meta"
+    },
+    {
+      "key": "property"
+    }
+  ],
+  "MixedTypeAnnotation": [],
+  "NewExpression": [
+    {
+      "key": "callee"
+    },
+    {
+      "key": "arguments"
+    }
+  ],
+  "Noop": [],
+  "NullLiteral": [],
+  "NullLiteralTypeAnnotation": [],
+  "NullableTypeAnnotation": [
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "NumberLiteralTypeAnnotation": [
+    {
+      "key": "value"
+    }
+  ],
+  "NumberTypeAnnotation": [],
+  "NumericLiteral": [
+    {
+      "key": "value"
+    }
+  ],
+  "ObjectExpression": [
+    {
+      "key": "properties"
+    }
+  ],
+  "ObjectMethod": [
+    {
+      "key": "kind"
+    },
+    {
+      "key": "key"
+    },
+    {
+      "key": "params"
+    },
+    {
+      "key": "body"
+    },
+    {
+      "key": "computed",
+      "default": false
+    }
+  ],
+  "ObjectPattern": [
+    {
+      "key": "properties"
+    }
+  ],
+  "ObjectProperty": [
+    {
+      "key": "key"
+    },
+    {
+      "key": "value"
+    },
+    {
+      "key": "computed",
+      "default": false
+    },
+    {
+      "key": "shorthand",
+      "default": false
+    },
+    {
+      "key": "decorators",
+      "default": null
+    }
+  ],
+  "ObjectTypeAnnotation": [
+    {
+      "key": "properties"
+    },
+    {
+      "key": "indexers",
+      "default": null
+    },
+    {
+      "key": "callProperties",
+      "default": null
+    },
+    {
+      "key": "internalSlots",
+      "default": null
+    },
+    {
+      "key": "exact",
+      "default": false
+    }
+  ],
+  "ObjectTypeCallProperty": [
+    {
+      "key": "value"
+    }
+  ],
+  "ObjectTypeIndexer": [
+    {
+      "key": "id",
+      "default": null
+    },
+    {
+      "key": "key"
+    },
+    {
+      "key": "value"
+    },
+    {
+      "key": "variance",
+      "default": null
+    }
+  ],
+  "ObjectTypeInternalSlot": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "value"
+    },
+    {
+      "key": "optional"
+    },
+    {
+      "key": "static"
+    },
+    {
+      "key": "method"
+    }
+  ],
+  "ObjectTypeProperty": [
+    {
+      "key": "key"
+    },
+    {
+      "key": "value"
+    },
+    {
+      "key": "variance",
+      "default": null
+    }
+  ],
+  "ObjectTypeSpreadProperty": [
+    {
+      "key": "argument"
+    }
+  ],
+  "OpaqueType": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "supertype",
+      "default": null
+    },
+    {
+      "key": "impltype"
+    }
+  ],
+  "OptionalCallExpression": [
+    {
+      "key": "callee"
+    },
+    {
+      "key": "arguments"
+    },
+    {
+      "key": "optional"
+    }
+  ],
+  "OptionalMemberExpression": [
+    {
+      "key": "object"
+    },
+    {
+      "key": "property"
+    },
+    {
+      "key": "computed",
+      "default": false
+    },
+    {
+      "key": "optional"
+    }
+  ],
+  "ParenthesizedExpression": [
+    {
+      "key": "expression"
+    }
+  ],
+  "PrivateName": [
+    {
+      "key": "id"
+    }
+  ],
+  "Program": [
+    {
+      "key": "body"
+    },
+    {
+      "key": "directives"
+    },
+    {
+      "key": "sourceType"
+    },
+    {
+      "key": "interpreter",
+      "default": null
+    }
+  ],
+  "QualifiedTypeIdentifier": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "qualification"
+    }
+  ],
+  "RegExpLiteral": [
+    {
+      "key": "pattern"
+    },
+    {
+      "key": "flags"
+    }
+  ],
+  "RestElement": [
+    {
+      "key": "argument"
+    }
+  ],
+  "ReturnStatement": [
+    {
+      "key": "argument",
+      "default": null
+    }
+  ],
+  "SequenceExpression": [
+    {
+      "key": "expressions"
+    }
+  ],
+  "SpreadElement": [
+    {
+      "key": "argument"
+    }
+  ],
+  "StringLiteral": [
+    {
+      "key": "value"
+    }
+  ],
+  "StringLiteralTypeAnnotation": [
+    {
+      "key": "value"
+    }
+  ],
+  "StringTypeAnnotation": [],
+  "Super": [],
+  "SwitchCase": [
+    {
+      "key": "test",
+      "default": null
+    },
+    {
+      "key": "consequent"
+    }
+  ],
+  "SwitchStatement": [
+    {
+      "key": "discriminant"
+    },
+    {
+      "key": "cases"
+    }
+  ],
+  "TSAnyKeyword": [],
+  "TSArrayType": [
+    {
+      "key": "elementType"
+    }
+  ],
+  "TSAsExpression": [
+    {
+      "key": "expression"
+    },
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "TSBooleanKeyword": [],
+  "TSCallSignatureDeclaration": [
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "parameters",
+      "default": null
+    },
+    {
+      "key": "typeAnnotation",
+      "default": null
+    }
+  ],
+  "TSConditionalType": [
+    {
+      "key": "checkType"
+    },
+    {
+      "key": "extendsType"
+    },
+    {
+      "key": "trueType"
+    },
+    {
+      "key": "falseType"
+    }
+  ],
+  "TSConstructSignatureDeclaration": [
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "parameters",
+      "default": null
+    },
+    {
+      "key": "typeAnnotation",
+      "default": null
+    }
+  ],
+  "TSConstructorType": [
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "typeAnnotation",
+      "default": null
+    }
+  ],
+  "TSDeclareFunction": [
+    {
+      "key": "id",
+      "default": null
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "params"
+    },
+    {
+      "key": "returnType",
+      "default": null
+    }
+  ],
+  "TSDeclareMethod": [
+    {
+      "key": "decorators",
+      "default": null
+    },
+    {
+      "key": "key"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "params"
+    },
+    {
+      "key": "returnType",
+      "default": null
+    }
+  ],
+  "TSEnumDeclaration": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "members"
+    }
+  ],
+  "TSEnumMember": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "initializer",
+      "default": null
+    }
+  ],
+  "TSExportAssignment": [
+    {
+      "key": "expression"
+    }
+  ],
+  "TSExpressionWithTypeArguments": [
+    {
+      "key": "expression"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    }
+  ],
+  "TSExternalModuleReference": [
+    {
+      "key": "expression"
+    }
+  ],
+  "TSFunctionType": [
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "typeAnnotation",
+      "default": null
+    }
+  ],
+  "TSImportEqualsDeclaration": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "moduleReference"
+    }
+  ],
+  "TSIndexSignature": [
+    {
+      "key": "parameters"
+    },
+    {
+      "key": "typeAnnotation",
+      "default": null
+    }
+  ],
+  "TSIndexedAccessType": [
+    {
+      "key": "objectType"
+    },
+    {
+      "key": "indexType"
+    }
+  ],
+  "TSInferType": [
+    {
+      "key": "typeParameter"
+    }
+  ],
+  "TSInterfaceBody": [
+    {
+      "key": "body"
+    }
+  ],
+  "TSInterfaceDeclaration": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "extends",
+      "default": null
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "TSIntersectionType": [
+    {
+      "key": "types"
+    }
+  ],
+  "TSLiteralType": [
+    {
+      "key": "literal"
+    }
+  ],
+  "TSMappedType": [
+    {
+      "key": "typeParameter"
+    },
+    {
+      "key": "typeAnnotation",
+      "default": null
+    }
+  ],
+  "TSMethodSignature": [
+    {
+      "key": "key"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "parameters",
+      "default": null
+    },
+    {
+      "key": "typeAnnotation",
+      "default": null
+    }
+  ],
+  "TSModuleBlock": [
+    {
+      "key": "body"
+    }
+  ],
+  "TSModuleDeclaration": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "TSNamespaceExportDeclaration": [
+    {
+      "key": "id"
+    }
+  ],
+  "TSNeverKeyword": [],
+  "TSNonNullExpression": [
+    {
+      "key": "expression"
+    }
+  ],
+  "TSNullKeyword": [],
+  "TSNumberKeyword": [],
+  "TSObjectKeyword": [],
+  "TSParameterProperty": [
+    {
+      "key": "parameter"
+    }
+  ],
+  "TSParenthesizedType": [
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "TSPropertySignature": [
+    {
+      "key": "key"
+    },
+    {
+      "key": "typeAnnotation",
+      "default": null
+    },
+    {
+      "key": "initializer",
+      "default": null
+    }
+  ],
+  "TSQualifiedName": [
+    {
+      "key": "left"
+    },
+    {
+      "key": "right"
+    }
+  ],
+  "TSStringKeyword": [],
+  "TSSymbolKeyword": [],
+  "TSThisType": [],
+  "TSTupleType": [
+    {
+      "key": "elementTypes"
+    }
+  ],
+  "TSTypeAliasDeclaration": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "TSTypeAnnotation": [
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "TSTypeAssertion": [
+    {
+      "key": "typeAnnotation"
+    },
+    {
+      "key": "expression"
+    }
+  ],
+  "TSTypeLiteral": [
+    {
+      "key": "members"
+    }
+  ],
+  "TSTypeOperator": [
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "TSTypeParameter": [
+    {
+      "key": "constraint",
+      "default": null
+    },
+    {
+      "key": "default",
+      "default": null
+    }
+  ],
+  "TSTypeParameterDeclaration": [
+    {
+      "key": "params"
+    }
+  ],
+  "TSTypeParameterInstantiation": [
+    {
+      "key": "params"
+    }
+  ],
+  "TSTypePredicate": [
+    {
+      "key": "parameterName"
+    },
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "TSTypeQuery": [
+    {
+      "key": "exprName"
+    }
+  ],
+  "TSTypeReference": [
+    {
+      "key": "typeName"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    }
+  ],
+  "TSUndefinedKeyword": [],
+  "TSUnionType": [
+    {
+      "key": "types"
+    }
+  ],
+  "TSUnknownType": [
+    {
+      "key": "types"
+    }
+  ],
+  "TSVoidKeyword": [],
+  "TaggedTemplateExpression": [
+    {
+      "key": "tag"
+    },
+    {
+      "key": "quasi"
+    }
+  ],
+  "TemplateElement": [
+    {
+      "key": "value"
+    },
+    {
+      "key": "tail",
+      "default": false
+    }
+  ],
+  "TemplateLiteral": [
+    {
+      "key": "quasis"
+    },
+    {
+      "key": "expressions"
+    }
+  ],
+  "ThisExpression": [],
+  "ThisTypeAnnotation": [],
+  "ThrowStatement": [
+    {
+      "key": "argument"
+    }
+  ],
+  "TryStatement": [
+    {
+      "key": "block"
+    },
+    {
+      "key": "handler",
+      "default": null
+    },
+    {
+      "key": "finalizer",
+      "default": null
+    }
+  ],
+  "TupleTypeAnnotation": [
+    {
+      "key": "types"
+    }
+  ],
+  "TypeAlias": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "typeParameters",
+      "default": null
+    },
+    {
+      "key": "right"
+    }
+  ],
+  "TypeAnnotation": [
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "TypeCastExpression": [
+    {
+      "key": "expression"
+    },
+    {
+      "key": "typeAnnotation"
+    }
+  ],
+  "TypeParameter": [
+    {
+      "key": "bound",
+      "default": null
+    },
+    {
+      "key": "default",
+      "default": null
+    },
+    {
+      "key": "variance",
+      "default": null
+    }
+  ],
+  "TypeParameterDeclaration": [
+    {
+      "key": "params"
+    }
+  ],
+  "TypeParameterInstantiation": [
+    {
+      "key": "params"
+    }
+  ],
+  "TypeofTypeAnnotation": [
+    {
+      "key": "argument"
+    }
+  ],
+  "UnaryExpression": [
+    {
+      "key": "operator"
+    },
+    {
+      "key": "argument"
+    },
+    {
+      "key": "prefix",
+      "default": true
+    }
+  ],
+  "UnionTypeAnnotation": [
+    {
+      "key": "types"
+    }
+  ],
+  "UpdateExpression": [
+    {
+      "key": "operator"
+    },
+    {
+      "key": "argument"
+    },
+    {
+      "key": "prefix",
+      "default": false
+    }
+  ],
+  "VariableDeclaration": [
+    {
+      "key": "kind"
+    },
+    {
+      "key": "declarations"
+    }
+  ],
+  "VariableDeclarator": [
+    {
+      "key": "id"
+    },
+    {
+      "key": "init",
+      "default": null
+    }
+  ],
+  "Variance": [
+    {
+      "key": "kind"
+    }
+  ],
+  "VoidTypeAnnotation": [],
+  "WhileStatement": [
+    {
+      "key": "test"
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "WithStatement": [
+    {
+      "key": "object"
+    },
+    {
+      "key": "body"
+    }
+  ],
+  "YieldExpression": [
+    {
+      "key": "argument",
+      "default": null
+    },
+    {
+      "key": "delegate",
+      "default": false
+    }
+  ]
+}
