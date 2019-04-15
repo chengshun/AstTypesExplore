@@ -50,7 +50,7 @@ class Root extends Component {
 						/>
 					</div>
 					<div className="content-item ast">
-						{error ? error : <JSONTree data={ast} />}
+						{error ? error : <JSONTree data={ast} theme="bright" />}
 					</div>
 					<div className="content-item types">
 				    <Highlight language="javascript">
