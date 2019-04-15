@@ -27,6 +27,7 @@
     "prettier": "^1.17.0",
     "react": "^16.8.6",
     "react-codemirror": "^1.0.0",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.6",
     "react-highlight": "^0.12.0",
     "react-json-tree": "^0.11.2",
