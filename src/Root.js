@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { parse } from '@babel/parser';
 import JSONTree from 'react-json-tree'
 import CodeMirror from 'react-codemirror';
+import Highlight from 'react-highlight'
 import generateTypes from './transform';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/lib/codemirror.css';
+import  'highlight.js/styles/atelier-cave-light.css';
 
 const options = {
 	lineNumbers: true,
@@ -51,7 +53,9 @@ class Root extends Component {
 						{error ? error : <JSONTree data={ast} />}
 					</div>
 					<div className="content-item types">
-						{astTypes}
+				    <Highlight language="javascript">
+				      {astTypes}
+				    </Highlight>
 					</div>
 				</div>
 			</div>
