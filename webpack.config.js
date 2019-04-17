@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -16,7 +17,8 @@ module.exports = {
 		rules: [
 			{
 				test: /\.js$/,
-				use: 'babel-loader'
+				use: 'babel-loader',
+				exclude: path.resolve(__dirname, 'node_modules')
 			},
 	        {
 	        	test: /\.css$/,
@@ -37,5 +39,38 @@ module.exports = {
 			'@src': path.resolve(__dirname, 'src')
 		}
 	},
-	plugins: isProduction ? [new MiniCssExtractPlugin()] : []
+	plugins: isProduction ? [new MiniCssExtractPlugin()] : [],
+	optimization: {
+		splitChunks: {
+			chunks: 'all',
+			minSize: 30000,
+			maxSize: 0,
+			minChunks: 1,				
+			name: true,
+			cacheGroups: {			
+				vendors: {
+				  test: /[\\/]node_modules[\\/](react|react-dom|mobx|mobx-react|prettier|react-codemirror|react-highlight|highlight.js|@babel|babel-runtime)[\\/]/,
+				  priority: -10
+				},
+				default: {
+				  minChunks: 2,
+				  priority: -20,
+				  reuseExistingChunk: true
+				}
+			}
+		},
+		runtimeChunk: true,
+		minimizer: [
+			new TerserPlugin({
+			  terserOptions: {
+				cache: true,
+				parallel: true,
+				warnings: false,				  
+				output: {
+					comments: false,
+				  }
+			  }
+			})
+		]	
+	}
 }

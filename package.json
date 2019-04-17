@@ -1,5 +1,5 @@
 {
-  "name": "AstTypesExplore",
+  "name": "AstypesExplore",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -45,6 +45,7 @@
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.6.0",
     "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.2.3",
     "webpack-cli": "^3.3.0"
   }
 }
