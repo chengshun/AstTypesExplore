@@ -18,11 +18,11 @@ const isObject = value => {
 const getTypeByString = value => {
   const type = Object.prototype.toString.call(value);
   const pattern = /\s?(\w+)\]/.exec(type);
-  return type ? pattern[1].toLowerCase() : 'string';  
+  return type ? pattern[1].toLowerCase() : 'string';
 }
 
 
-const astNode = (node) =>{
+const astNode = (node) => {
   const nodeType = node.type;
   if (nodeType && typeApis[nodeType]) {
     const params = typeApis[nodeType];
@@ -34,7 +34,7 @@ const astNode = (node) =>{
         for (let value of paramValue) {
           values.push(astNode(value));
         }
-        nodeArgs.push(t.ArrayExpression(values));        
+        nodeArgs.push(t.ArrayExpression(values));
       } else if (isObject(paramValue)) {
         nodeArgs.push(astNode(paramValue));
       } else {
@@ -47,7 +47,7 @@ const astNode = (node) =>{
           nodeArgs.push(typeMap[valueType]());
         } else {
           nodeArgs.push(typeMap[valueType](fixValue));
-        }        
+        }
       }
     }
     return t.CallExpression(
@@ -56,7 +56,7 @@ const astNode = (node) =>{
         t.Identifier(nodeType),
       ),
       nodeArgs
-    )    
+    )
   }
 }
 
@@ -66,7 +66,7 @@ const traverse = (bodies) => {
     const bodyAst = t.ExpressionStatement(astNode(body));
     result.push(bodyAst);
   }
-  return result;  
+  return result;
 }
 
 const generateTypes = (ast) => {
