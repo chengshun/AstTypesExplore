@@ -1,8 +1,5 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-
-const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
 	mode: 'production',
@@ -41,7 +38,6 @@ module.exports = {
 			'prettier': path.resolve(__dirname, 'node_modules/prettier/standalone.js')
 		}
 	},
-	plugins: isProduction ? [new MiniCssExtractPlugin()] : [],
 	optimization: {
 		splitChunks: {
 			chunks: 'all',
@@ -51,8 +47,12 @@ module.exports = {
 			name: true,
 			cacheGroups: {			
 				vendors: {
-				  test: /[\\/]node_modules[\\/](react|react-dom|mobx|mobx-react|prettier|react-codemirror|react-highlight|highlight.js|@babel|babel-runtime)[\\/]/,
+				  test: /[\\/]node_modules[\\/](react|react-dom|mobx|mobx-react|react-codemirror|babel-runtime|@babel)[\\/]/,
 				  priority: -10
+				},
+				common: {
+				  test: /[\\/]node_modules[\\/](prettier|react-highlight|highlight.js)[\\/]/,
+				  priority: -5
 				},
 				default: {
 				  minChunks: 2,

@@ -47,14 +47,13 @@ a img {
 }
 
 .container{
-  height: calc(100vh);  
+  height: calc(100vh - 53px);  
   .content{
     display: flex;  
     height: 100%;
     .content-item{
       height: 100%;
       flex: 1; 
-      width: 33.33%;
       border-right: 2px solid #ccc;
       overflow-y: auto;
       &:last-child{
@@ -66,14 +65,63 @@ a img {
 
 .content-item{
   position: relative;
-  .CodeMirror{
+  .ReactCodeMirror{
     height: 100%;
-    overflow: auto;
-    overflow-x: hidden;  
+    .CodeMirror{
+      height: 100%;
+      overflow: auto;
+      overflow-x: hidden;  
+    }    
   }
   .copy-button{
     position: fixed;
-    top: 10px;
+    top: 55px;
     right: 10px;
+  }
+}
+
+.types{
+  pre{
+    height: 100%;
+    .hljs{
+      height: 100%;
+    }
+  }
+}
+
+.button-group{
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #d9d9d9;
+  .btn{
+    position: relative;
+    height: 32px;
+    border: 1px solid #d9d9d9;
+    margin: 0;
+    padding: 0 15px;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 14px;
+    z-index: 1;
+    color: rgba(0,0,0,0.65);
+    background: #fff;
+    border-left: 0;
+    &:first-child{
+      border-left: 1px solid #d9d9d9;
+      border-radius: 4px 0 0 4px;      
+    }
+    &:last-child{
+      border-radius: 0 4px 4px 0;
+    }
+  }  
+  .btn-active{
+    color: #1890ff;
+    border-color: #1890ff; 
+    z-index: 1; 
+    &:first-child,
+    &:last-child{
+      border-left: 1px solid #1890ff;  
+    }          
   }
 }
